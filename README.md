@@ -6,7 +6,7 @@ GAEL will log either a custom action or 'Javascript error' as the action, and pu
 
 ## Usage
 
-Simply include the module in you app, and GAEL takes care of the rest.
+Simply include `'gael'` in you app, and GAEL takes care of the rest.
 
 GAEL works by hijacking Angular's `$exceptionHandler` and firing a GA event on top, just set and forget.
 
