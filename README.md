@@ -10,7 +10,7 @@ Simply include the module in you app, and GAEL takes care of the rest.
 
 GAEL works by hijacking Angular's `$exceptionHandler` and firing a GA event on top, just set and forget.
 
-You can configure GAEL's action by injecting the `gaelConfig` module into your app.config:
+You can configure GAEL's action by injecting the `gaelConfig` service into your app.config:
 
 ```
 myApp.config(function(gaelConfig){
