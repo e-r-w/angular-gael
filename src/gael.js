@@ -2,7 +2,7 @@ angular.module('gael', ['angulartics'])
     .factory('$exceptionHandler', ['$log', '$analytics', 'gaelConfig', function ($log, $analytics, gaelConfig) {
       return function (exception, cause) {
         $log.error.apply($log, arguments);
-        $analytics.eventTrack(gaelConfig.action, {
+        $analytics.eventTrack(gaelConfig.action || 'Javascript error', {
           category: exception.message || exception,
           label: exception.stack
         });

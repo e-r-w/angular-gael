@@ -2,6 +2,8 @@
 
 Automagic error logging to Google Analytics.
 
+GAEL will log either a custom action or 'Javascript error' as the action, and pushes the exception message to the category, plus the stack trace to the label.
+
 ## Usage
 
 Simply include the module in you app, and GAEL takes care of the rest.
@@ -19,6 +21,8 @@ myApp.config(function(gaelConfig){
 ```
 
 ## TODO
+
+Make the stack trace configurable on/off - this is lots of data and probably not needed for everyone.
 
 Get this project out of the Angular stone age and test against more recent versions.
 
