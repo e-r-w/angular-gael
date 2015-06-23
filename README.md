@@ -12,7 +12,7 @@ GAEL works by hijacking Angular's `$exceptionHandler` and firing a GA event on t
 
 You can configure GAEL's action by injecting the `gaelConfig` service into your app.config:
 
-```
+```js
 myApp.config(function(gaelConfig){
 
   gaelConfig.action = 'stop breaking my code';
